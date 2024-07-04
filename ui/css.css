@@ -1,0 +1,43 @@
+* {
+    height:100%;
+    width:100%;
+    padding:0px;
+  }
+  body {
+    background:#000;
+    overflow:hidden;
+    margin:0;
+  }
+  
+  #container {
+    display:none;
+    overflow:hidden;
+    position:relative;
+    background-image:url(https://rsgames.hs.llnwd.net/o10/ZTM1MTNmMmVjYjRhNWViNWQ3ZmZhOGUyMDI2OGJlYzY=/imgs/Brooklyn-Bridge-Cityscape_2560.jpg);
+    -webkit-animation: bgmove 18s infinite linear;
+  }
+  
+  #nico, #roman, #dmitriy {
+    width:auto;
+    height:auto;
+    position:absolute;
+    display:none;
+  }
+  
+  #nico {
+    bottom:-70px;
+    left:30%;
+  }
+  #roman {
+    bottom:-60px;
+    left:60%;
+  }
+  #dmitriy {
+    bottom:-110px;
+    left:40%;
+  }
+  
+  @-webkit-keyframes bgmove {
+    0% {background-position:100% 50%;}
+    100% {background-position:70% 30%;}
+  }
